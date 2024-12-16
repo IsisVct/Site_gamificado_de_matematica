@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0;
+}
+/*body * {
+    box-sizing:border-box;
+}*/
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background:#0b2447;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.left-login>h1{ 
+    color: #A5d7E8;
+    font-size: 3vw;
+}
+.left-login>h2{ 
+    color: #A5d7E8;
+    font-size: 1.5vw;
+}
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #cfdce0;
+}
+.card-login{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #19376D;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login>h1{
+    color:#A5d7E8;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0; 
+   
+}
+
+.textfield>input{
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    padding: 8px;
+    background:transparent;
+    color: #e1ececde;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #7666ce;;
+}
+.textfield>label{
+    color: #e1ececde;
+    margin-bottom: 10px;
+}
+.input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-bottom: 1px solid #7666ce;
+}
+.input-container input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #939494de;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.input-container .fa-key {
+    color: #e1ececde;
+    padding: 0 10px;
+}
+
+.custom-date-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(41%) sepia(40%) saturate(2596%) hue-rotate(160deg) brightness(97%) contrast(87%);
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #0b2447;
+    background: #A5d7E8;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #a5d7e851;
+    text-align: center;
+}
+.img{
+    width: 35vw;
+    height: 50vh;
+}
+
+p{
+    color: #e1ececde;
+}
+p>a{
+    color: #A5d7E8;
+}
+form{
+    margin: 0;
+    padding: 0;
+;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+       flex-direction: column;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+        margin-top: 10vh;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login>h1{
+        display: none;
+    }
+    .left-login>h2{
+        font-size: 1rem;
+    }
+    .img{
+        margin-top: 100px;
+        width: 45vh;
+        height: auto;
+    }
+    .card-login{
+        width: 90%;
+        border-radius: 0;
+    }
+
+}
